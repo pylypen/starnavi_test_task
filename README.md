@@ -3,6 +3,9 @@
 List of Python libs in `requirements.txt`.
 
 Copy `.env.example` and rename to `.env`
+
+MySQL container was created with Docker `docker-compose.yml`
+
 - Apply migrations `python manage.py migrate`
 - Run server `python manage.py runserver 0.0.0.0:3000`
 ##
