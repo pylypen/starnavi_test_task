@@ -1,0 +1,9 @@
+djangorestframework~=3.12.2
+djangorestframework-simplejwt
+django-cors-headers
+django~=3.1.6
+clearbit~=0.1.7
+requests~=2.25.1
+Faker~=6.1.1
+python-dotenv~=0.15.0
+mysqlclient
