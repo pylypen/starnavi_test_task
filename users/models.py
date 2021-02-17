@@ -10,8 +10,9 @@ class User(AbstractUser):
     # unset username
     username = None
 
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(_('email address'), unique=True, db_index=True)
     first_name = models.CharField(_('first name'), max_length=128)
+    last_name = models.CharField(_('last name'), max_length=150)
     location = models.CharField(_('location'), max_length=128, blank=True, null=True)
     bio = models.CharField(_('bio'), max_length=128, blank=True, null=True)
     site = models.CharField(_('site'), max_length=128, blank=True, null=True)

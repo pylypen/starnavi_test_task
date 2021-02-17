@@ -7,7 +7,7 @@ class Post(models.Model):
     """
     Post Model
     """
-    title = models.CharField(max_length=128)
+    title = models.CharField(max_length=128, db_index=True)
     description = models.TextField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created = models.DateTimeField(default=timezone.now)
